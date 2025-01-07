@@ -330,13 +330,13 @@ namespace Restoran_Adisyon_Otomasyonu.Model
 
             if (dt2.Rows[0]["orderType"].ToString() == "Delivery")
             {
-                btnDelivery.Checked = true;
+                //btnDelivery.Checked = true;
                 lblWaiter.Visible = false;
                 lblTable.Visible = false;
             }
             else if (dt2.Rows[0]["orderType"].ToString() == "Delivery")
             {
-                btnDelivery.Checked = true;
+                //abtnDelivery.Checked = true;
                 lblWaiter.Visible = false;
                 lblTable.Visible = false;
             }

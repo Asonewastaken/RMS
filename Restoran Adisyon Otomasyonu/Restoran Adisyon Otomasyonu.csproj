@@ -370,5 +370,14 @@
   <ItemGroup>
     <None Include="Resources\billlist2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\freepik__upload__28552.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\freepik__upload__285521.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RMS.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

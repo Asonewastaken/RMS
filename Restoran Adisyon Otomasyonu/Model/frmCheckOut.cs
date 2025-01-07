@@ -40,7 +40,7 @@ namespace Restoran_Adisyon_Otomasyonu.Model
         private void btnSave_Click_1(object sender, EventArgs e)
         {
             string qry = @"Update tblMain set total = @total, received = @received,
-                            change = @change, status = 'Paid' where MainID =  @id";
+                            change = @change, status = 'Ödendi' where MainID =  @id";
 
             Hashtable ht = new Hashtable();
             ht.Add("@id", MainID);

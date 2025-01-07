@@ -233,6 +233,26 @@ namespace Restoran_Adisyon_Otomasyonu.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap freepik__upload__28552 {
+            get {
+                object obj = ResourceManager.GetObject("freepik__upload__28552", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap freepik__upload__285521 {
+            get {
+                object obj = ResourceManager.GetObject("freepik__upload__285521", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Icons8_Windows_8_City_Restaurant_256 {
             get {
                 object obj = ResourceManager.GetObject("Icons8-Windows-8-City-Restaurant.256", resourceCulture);
@@ -346,6 +366,16 @@ namespace Restoran_Adisyon_Otomasyonu.Properties {
         internal static System.Drawing.Bitmap restoran_icon {
             get {
                 object obj = ResourceManager.GetObject("restoran_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap RMS {
+            get {
+                object obj = ResourceManager.GetObject("RMS", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

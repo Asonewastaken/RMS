@@ -139,7 +139,7 @@ namespace Restoran_Adisyon_Otomasyonu.View
             guna2MessageDialog1.Buttons = Guna.UI2.WinForms.MessageDialogButtons.YesNo;
             if (guna2MessageDialog1.Show("Silmek istediğinize emin misiniz ?") == DialogResult.Yes)
             {
-                string qry = @"Update tblMain set status = 'Complete' where MainID = @ID";
+                string qry = @"Update tblMain set status = 'Tamamlandı' where MainID = @ID";
                 Hashtable ht = new Hashtable();
                 ht.Add("@ID", id);
 
