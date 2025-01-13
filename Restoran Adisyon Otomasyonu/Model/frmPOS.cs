@@ -292,16 +292,17 @@ namespace Restoran_Adisyon_Otomasyonu.Model
                 cmd2.ExecuteNonQuery();
                 if (MainClass.con.State == ConnectionState.Open) { MainClass.con.Close(); }
 
-                guna2MessageDialog1.Show("Başarıyla Kaydedildi");
-                MainID = 0;
-                detailID = 0;
-                guna2DataGridView.Rows.Clear();
-                lblTable.Text = "";
-                lblWaiter.Text = "";
-                lblTable.Visible = false;
-                lblWaiter.Visible = false;
-                lblTotal.Text = "00";
             }
+
+            guna2MessageDialog1.Show("Başarıyla Kaydedildi");
+            MainID = 0;
+            detailID = 0;
+            guna2DataGridView.Rows.Clear();
+            lblTable.Text = "";
+            lblWaiter.Text = "";
+            lblTable.Visible = false;
+            lblWaiter.Visible = false;
+            lblTotal.Text = "00";
         }
 
         public int id = 0;
