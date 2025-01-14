@@ -61,18 +61,29 @@ namespace Restoran_Adisyon_Otomasyonu.View
                     frm.ShowDialog();
                     GetData();
                 }
+
                 // Silme işlemi
                 if (guna2DataGridView.CurrentCell.OwningColumn.Name == "dgvDel")
                 {
-                    int id = Convert.ToInt32(guna2DataGridView.CurrentRow.Cells["dgvid"].Value);
+                    guna2MessageDialog2.Style = Guna.UI2.WinForms.MessageDialogStyle.Dark; 
+                    guna2MessageDialog2.Buttons = Guna.UI2.WinForms.MessageDialogButtons.YesNo; 
+                    guna2MessageDialog2.Icon = Guna.UI2.WinForms.MessageDialogIcon.Question; 
+                    guna2MessageDialog2.Caption = "Silme Onayı"; 
 
-                    string qry = "Delete from products where pID = @pID";
-                    Hashtable ht = new Hashtable();
-                    ht.Add("@pID", id);
-                    MainClass.SQL(qry, ht);
-                    GetData();
+                    // Kullanıcının seçimi
+                    if (guna2MessageDialog2.Show("Silmek istediğinize emin misiniz ?") == DialogResult.Yes)
+                    {
+                        int id = Convert.ToInt32(guna2DataGridView.CurrentRow.Cells["dgvid"].Value);
+
+                        string qry = "Delete from products where pID = @pID";
+                        Hashtable ht = new Hashtable();
+                        ht.Add("@pID", id);
+                        MainClass.SQL(qry, ht);
+                        GetData();
+                    }
                 }
             }
         }
+
     }
 }
